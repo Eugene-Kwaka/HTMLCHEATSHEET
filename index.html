@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--This is the head tag which has the necessary CSS, JS Links and the Website's title-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML CHEAT SHEET</title>
 </head>
 
-
+    
 <body>
 
     <!-- Block Level Elements start on a new line and take full width of the line.
@@ -18,9 +19,21 @@
     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, necessitatibus.</h2>
 </div>
 
- <!-- Inline Level Elements don't start on a new line and take only the necessary width. 
+
+<hr> <!--This is a horizontal line break-->
+
+<div>
+    <a href="blog.html">Go to Blog</a>
+</div>
+<hr>
+
+<!-- Inline Level Elements don't start on a new line and take only the necessary width. 
             examples are <span>, <img>, <a>, <strong> -->
 <p>Lorem ipsum dolor sit amet consectetur, <strong>adipisicing elit</strong>. Laboriosam facere, modi quasi nisi voluptates animi voluptatibus provident et sed quod reiciendis, maiores optio nemo reprehenderit odit! Non eos odit, unde in tempore cumque sed delectus! Illo, porro eius?</p>
+
+
+<hr> <!--This is a horizontal line break-->
+
 
 <!--Lists-->
 <!--Unordered Lists-->
@@ -39,22 +52,116 @@
     <li>List 1</li>
 </ol>
 
+<hr> <!--This is a horizontal line break-->
+
 
 <!--Table-->
 <table>
+    <thead>
     <!--This contains the header-text for the columns in the table-->
-<thead>
-    <!--these are the headings for each column-->
-    <tr>
-    <th>Name</th>
-    </tr>
-    <tr>Age</tr>
-    <tr>Phone</tr>
-</thead>
-<tbody>
-
-</tbody>
+        <tr>
+        <!--these are the headings for each column-->
+        <th>Name</th>
+        <th>Age</th>
+        <th>Phone</th>
+        </tr>   
+    </thead>
+    <tbody>
+    <!--For the table body, we have <td> instead which is data in the rows-->
+        <tr>
+            <td>Eugene</td>
+            <td>24</td>
+            <td>0788945949384</td>
+        </tr>
+        <tr>
+            <td>Rambo</td>
+            <td>60</td>
+            <td>0932094843</td>
+        </tr>
+    </tbody>
 </table>
+
+<br> <!--This is a line break-->
+
+<hr> <!--This is a horizontal line break-->
+
+
+<!--FORMS-->
+<form action="" method="POST">
+    <div>
+    <!--Placing the Form Fields in the div elements will position them above each other and not inline-->
+        <label>First Name</label>
+        <input type="text" name="first-name" placeholder="Enter First Name">
+    </div>
+<br>
+    <div>
+        <label>Last Name</label>
+        <input type="text" name="last-name" placeholder="Enter Last Name">
+    </div>
+<br>
+    <div>
+        <label>Email</label>
+        <input type="email" name="email">
+    </div>
+<br>
+    <div>
+        <label for="">Message</label>
+        <input type="text-area" name="message">
+    </div>
+<br>
+    <div>
+        <select name="gender" id="">
+            <!--Select tag includes options that a user can choose when filling a form-->
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+<br>
+    <div>
+        <label for="">Age</label>
+        <input type="number" name="age" value="0">
+    </div>
+<br>
+    <div>
+        <label for="">Birthday</label>
+        <input type="date" name="birthday">
+    </div>
+<br>
+<!--The submit button comes as an input element-->
+    <input type="submit" name="Submit">
+</form>
+
+<br>
+
+<!--Button-->
+<button>Click Me</button>
+
+<br>
+<hr>
+<!--Images-->
+<div>
+    <a href="example.jpg">
+    <img src="example.jpg" alt="My sample image"
+    width="200" height="300">
+    </a>    
+</div>
+
+<br>
+<hr>
+
+<!--BlockQoute cites a a blockqoute from a different site and places it in my website-->
+<blockquote cite="https:\\createdbyeugene.com">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum consequuntur ut ab qui exercitationem nesciunt ad repellat soluta odio omnis cumque odit, voluptates atque vitae in quas eligendi nihil reprehenderit?</blockquote>
+
+<br>
+<hr>
+
+<!--Abbreviations-->
+<p>The <abbr title="CreatedByEugene">CBE</abbr> company wants to welcome you to their conference</p>
+
+<!--Cite-->
+<p>I am the dopest <cite>Fullstack Developer</cite> in the World</p>
 </body>
 </html>
+
 
